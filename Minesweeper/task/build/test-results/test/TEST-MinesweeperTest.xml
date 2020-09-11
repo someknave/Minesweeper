@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MinesweeperTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-09-11T05:22:18" hostname="DESKTOP-A82CK7U" time="0.167">
+  <properties/>
+  <testcase name="start" classname="MinesweeperTest" time="0.167"/>
+  <system-out><![CDATA[?[1;31m
+Start test 1?[0m
+.........
+X........
+.......X.
+......X..
+....X....
+.........
+.........
+..X.X..X.
+.....X.XX
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
