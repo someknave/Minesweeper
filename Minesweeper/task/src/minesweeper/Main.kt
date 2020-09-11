@@ -1,6 +1,7 @@
 package minesweeper
 
 import java.sql.Array
+import java.util.*
 import kotlin.random.Random
 
 object MineSweeper {
@@ -10,10 +11,12 @@ object MineSweeper {
     val mines = mutableListOf<Pair<Int, Int>>()
     var grid = Array(0) { CharArray(0) { '.' } }
 }
-
+val input = Scanner(System.`in`)
 
 fun main() {
-    createGrid(10, 9, 9)
+    println("How many mines do you want on the field?")
+    val mine = input.nextInt()
+    createGrid(mine, 9, 9)
     printGrid()
 
 
@@ -23,7 +26,7 @@ fun createGrid(m: Int, c: Int, r: Int = c) {
     MineSweeper.mineCount = m
     MineSweeper.columns = c
     MineSweeper.rows = r
-    if (m * 2 > c * r) return println("Too many mines")
+    if (m * 10 > c * r * 9) return println("Too many mines")
     for (i in 0 until m) {
         var pair = newMine(c, r)
         while (pair in MineSweeper.mines) {
