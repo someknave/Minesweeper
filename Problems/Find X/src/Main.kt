@@ -7,8 +7,9 @@ fun main(args: Array<String>) {
 
 }
 fun getX() {
-    val a = scanner.next().toDoubleOrNull()?: return println("Invalid aguement")
-    val b = scanner.next().toDoubleOrNull()?: return println("Invalid aguement")
-    val c = scanner.next().toDoubleOrNull()?: return println("Invalid aguement")
-    println((c - b)/a)
+    val a = scanner.next().toDoubleOrNull() ?: return println(warning)
+    val b = scanner.next().toDoubleOrNull() ?: return println(warning)
+    val c = scanner.next().toDoubleOrNull() ?: return println(warning)
+    println((c - b) / a)
 }
+val warning = "Invalid arguement"
